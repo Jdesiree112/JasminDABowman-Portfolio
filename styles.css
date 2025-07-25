@@ -71,8 +71,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about .text-block {
-  background-color: #2e251d;
-  color: #fff;
+  background-image: url('/images/Background_Pattern.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #0c0e13;
   display: flex;
   flex-direction: column; /* This will stack the children vertically */
   justify-content: center;
@@ -81,4 +83,52 @@ h1, h2, h3, h4, h5, h6 {
   width: 80%;
   min-height: 400px;
   padding: 30px;
+}
+
+.section-container {
+  display: flex;
+  width: 100%;
+  min-height: 600px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 20%;
+  background-color: rgb(249, 245, 242);
+  padding: 30px 20px;
+  font-family: 'Merriweather', serif;
+  box-sizing: border-box;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+  color: #7a5c4c;
+}
+
+/* Project Previews */
+.project-preview {
+  width: 80%;
+  padding: 30px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.project-preview h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
 }
